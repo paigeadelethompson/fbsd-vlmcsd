@@ -1,5 +1,5 @@
-# Use the imported FreeBSD base image
-FROM localhost/freebsd
+# Use FreeBSD 14.1-RELEASE base image
+FROM localhost/freebsd:14-1-release
 
 # Bootstrap and install pkg
 RUN /bin/sh -c 'pkg bootstrap -y && pkg update && pkg upgrade -y'
